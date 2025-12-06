@@ -1,2 +1,6 @@
-# laptop-rice
-Set up specifically for personal use. Feel free to fork
+# Niri rice for my laptop
+
+```
+git clone https://github.com/LizzyXR/laptop-rice && cd laptop-rice
+cp -r niri waybar mako fuzzel fastfetch swww swaylock swayidle
+```
