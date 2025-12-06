@@ -7,7 +7,9 @@ $ sudo pacman -S niri waybar mako fuzzel fastfetch swaylock swayidle
 
 ### Installation for Debian based systems
 ```
-$ sudo apt install niri waybar mako fuzzel fastfetch swaylock swayidle
+$ sudo add-apt-repository ppa:avengemedia/danklinux
+$ sudo add-apt-repository ppa:avengemedia/dms
+$ sudo apt install niri dms waybar mako fuzzel fastfetch swaylock swayidle
 ```
 ### Copy everything to ~/.config
 ```
