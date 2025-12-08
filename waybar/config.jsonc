@@ -41,10 +41,10 @@
         "menu": "on-click",
         "menu-file": "$XDG_CONFIG_HOME/waybar/menus/power_menu.xml",
         "menu-actions": {
-            "shutdown": "loginctl poweroff",
-            "reboot": "loginctl reboot",
-            "suspend": "loginctl suspend",
-            "hibernate": "loginctl hibernate"
+            "shutdown": "systemctl poweroff",
+            "reboot": "systemctl reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
         }
   },
   "cpu": {
