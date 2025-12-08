@@ -22,7 +22,7 @@
         {
             "type": "os",
             "key": " ",
-            "keyColor": "orange",  // = color4
+            "keyColor": "yellow",  // = color4
         },
         {
             "type": "kernel",
