@@ -22,68 +22,68 @@
         {
             "type": "os",
             "key": " ",
-            "keyColor": "yellow",  // = color4
+            "keyColor": "white",  // = color4
         },
         {
             "type": "kernel",
             "key": " ",
-            "keyColor": "bright_yellow",
+            "keyColor": "white",
         },
         {
             "type": "packages",
             "key": " ",
-            "keyColor": "bright_yellow",
+            "keyColor": "white",
         },
         {
             "type": "shell",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
         {
             "type": "terminal",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
         {
             "type": "wm",
             "key": " ",
-            "keyColor": "bright_yellow",
+            "keyColor": "white",
         },
         {
             "type": "cursor",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
         {
             "type": "terminalfont",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
         {
             "type": "uptime",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
         {
             "type": "datetime",
             "format": "{1}-{3}-{11}",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
                         {
             "type": "memory",
             "key": "󰍛 ",
-            "keyColor": "bright_yellow"
+            "keyColor": "white"
         },
         {
             "type": "media",
             "key": " ",
-            "keyColor": "bright_yellow", 
+            "keyColor": "white", 
         },
                 {
             "type": "monitor",
             "key": " ",
-            "keyColor": "bright_yellow",
+            "keyColor": "white",
         },
         ]
 }
