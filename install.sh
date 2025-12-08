@@ -15,7 +15,4 @@ cp -r fastfetch "$HOME/.config/"
 cp -r swaylock "$HOME/.config/"
 cp -r swayidle "$HOME/.config/"
 
-echo "Cleaning up..."
-rm -rf "$TMPDIR"
-
 echo "Done! :D"
