@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo "Installing required packages..."
-sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle rust libpipewire pkgconf clang
+sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle calcurse rust libpipewire pkgconf clang
 cargo install wiremix
 
 echo "Performing magic..."
