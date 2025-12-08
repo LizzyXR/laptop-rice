@@ -94,7 +94,7 @@
     "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
-    "tooltip-format": "Conexões: {num_connections}",
+    "tooltip-format": "Connections: {num_connections}",
     "on-click": "$XDG_CONFIG_HOME/waybar/indicators/bluetooth-manager.sh",
     "on-click-right": "$XDG_CONFIG_HOME/waybar/indicators/bluetooth-toggle.sh"
   },
