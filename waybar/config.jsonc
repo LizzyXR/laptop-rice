@@ -136,8 +136,8 @@
   },
   "idle_inhibitor": {
     "format": "{icon}",
-    "tooltip-format-activated": "Ativado",
-    "tooltip-format-deactivated": "Desativado",
+    "tooltip-format-activated": "Activated",
+    "tooltip-format-deactivated": "Deactivated",
     "format-icons": {
         "activated": "󰅶",
         "deactivated": "󰾪"
