@@ -12,7 +12,6 @@ cp -r waybar "$HOME/.config/"
 cp -r mako "$HOME/.config/"
 cp -r fuzzel "$HOME/.config/"
 cp -r fastfetch "$HOME/.config/"
-cp -r swaylock "$HOME/.config/"
 cp -r swayidle "$HOME/.config/"
 
 echo "Done! :D"
