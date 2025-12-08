@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface>
-    <object class="GtkMenu" id="menu">
-        <child>
-            <object class="GtkMenuItem" id="suspend">
-                <property name="label">Suspend</property>
-            </object>
-        </child>
-        <child>
-            <object class="GtkMenuItem" id="hibernate">
-                <property name="label">Hibernate</property>
-            </object>
-        </child>
-        <child>
-            <object class="GtkMenuItem" id="shutdown">
-                <property name="label">Shutdown</property>
-            </object>
-        </child>
-        <child>
-            <object class="GtkSeparatorMenuItem" id="delimiter1" />
-        </child>
-        <child>
-            <object class="GtkMenuItem" id="reboot">
-                <property name="label">Reboot</property>
-            </object>
-        </child>
-    </object>
-</interface>
+<menu id="power-menu">
+    <item label="Suspend" action="systemctl suspend"/>
+    <item label="Hibernate" action="systemctl hibernate"/>
+    <item label="Shutdown" action="systemctl poweroff"/>
+    <separator/>
+    <item label="Reboot" action="systemctl reboot"/>
+</menu>
