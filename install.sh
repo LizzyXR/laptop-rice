@@ -15,7 +15,11 @@ if command -v pacman >/dev/null 2>&1; then
     cp -r fuzzel "$HOME/.config/"
     cp -r fastfetch "$HOME/.config/"
     
-    echo "Don't forget to apply the appropriate permissions for waybar!"
+    #echo "Don't forget to apply the appropriate permissions for waybar!"
+    chmod +x ~/.config/waybar/indicators/executable_bluetooth-manager.sh
+    chmod +x ~/.config/waybar/indicators/executable_bluetooth-toggle.sh
+    chmod +x ~/.config/waybar/indicators/executable_power-profiles.sh
+    chmod +x ~/.config/waybar/indicators/executable_screen-recording.sh
     
     read -p "Done! Reboot? [Y/n]: " answer
     answer=${answer:-Y}
