@@ -6,6 +6,8 @@ if command -v pacman >/dev/null 2>&1; then
     echo "Installing required packages..."
     sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle calcurse networkmanager gammastep rust libpipewire pkgconf clang
     cargo install wiremix
+
+    sudo systemctl enable --now NetworkManager
     
     echo "Performing magic..."
     mkdir -p "$HOME/.config"
@@ -15,7 +17,7 @@ if command -v pacman >/dev/null 2>&1; then
     cp -r fuzzel "$HOME/.config/"
     cp -r fastfetch "$HOME/.config/"
     
-    #echo "Don't forget to apply the appropriate permissions for waybar!"
+    echo "Applying permissions for waybar scripts..."
     chmod +x ~/.config/waybar/indicators/executable_bluetooth-manager.sh
     chmod +x ~/.config/waybar/indicators/executable_bluetooth-toggle.sh
     chmod +x ~/.config/waybar/indicators/executable_power-profiles.sh
