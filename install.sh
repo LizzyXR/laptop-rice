@@ -18,11 +18,8 @@ if command -v pacman >/dev/null 2>&1; then
     cp -r fastfetch "$HOME/.config/"
     
     echo "Applying permissions for waybar scripts..."
-    #find "$HOME/.config/waybar" -type f -name "executable_*.sh" -exec chmod +x {} \;
-    chmod +x "$HOME/.config/waybar/indicators/executable_bluetooth-manager.sh"
-    chmod +x "$HOME/.config/waybar/indicators/executable_bluetooth-toggle.sh"
-    chmod +x "$HOME/.config/waybar/indicators/executable_power-profiles.sh"
-    chmod +x "$HOME/.config/waybar/indicators/executable_screen-recording.sh"
+    chmod +x "$HOME/.config/waybar/menus/power_menu.sh"
+    find "$HOME/.config/waybar" -type f -name "executable_*.sh" -exec chmod +x {} \;
     
     read -p "Done! Reboot? [Y/n]: " answer
     answer=${answer:-Y}
