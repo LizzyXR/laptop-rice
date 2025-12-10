@@ -4,7 +4,7 @@ set -euo pipefail
 
 if command -v pacman >/dev/null 2>&1; then
     echo "Installing required packages..."
-    sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle thunar calcurse networkmanager gammastep rust libpipewire pkgconf clang
+    sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle thunar calcurse networkmanager gammastep rust libpipewire pkgconf clang gnu-free-fonts noto-fonts
     cargo install wiremix
 
     sudo systemctl enable --now NetworkManager
