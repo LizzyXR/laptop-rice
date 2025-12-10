@@ -4,6 +4,13 @@ set -euo pipefail
 
 if command -v pacman >/dev/null 2>&1; then
     echo "Installing required packages..."
+# install yay
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd ..
+    rm -rf yay
+    
     sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle swww thunar htop calcurse networkmanager gammastep rust libpipewire pkgconf clang gnu-free-fonts noto-fonts
     cargo install wiremix
 
