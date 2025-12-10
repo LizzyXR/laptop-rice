@@ -12,12 +12,15 @@ if command -v pacman >/dev/null 2>&1; then
     cd ..
     rm -rf yay
     cd "$HOME/laptop-rice"
+    clear
     
     sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle swww thunar htop calcurse networkmanager gammastep rust libpipewire pkgconf clang gnu-free-fonts noto-fonts
     yay -S --needed --noconfirm ttf-noto-sans-mono-vf
     cargo install wiremix
 
     sudo systemctl enable --now NetworkManager
+
+    clear
     
     echo "Performing magic..."
     mkdir -p "$HOME/.config"
