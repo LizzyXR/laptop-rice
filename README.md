@@ -6,7 +6,6 @@
 ```
 git clone https://github.com/LizzyXR/laptop-rice && cd laptop-rice
 chmod +x install.sh
-./install.sh
-chmod +x ~/.config/waybar/indicators/executable_bluetooth-manager.sh && chmod +x ~/.config/waybar/indicators/executable_bluetooth-toggle.sh && chmod +x ~/.config/waybar/indicators/executable_power-profiles.sh && chmod +x ~/.config/waybar/indicators/executable_screen-recording.sh
+sudo ./install.sh
 ```
 ### my walls can be found [here](https://github.com/lucysixsixsix/niri-rice-two/tree/main/.config/walls) (completely optional!)
