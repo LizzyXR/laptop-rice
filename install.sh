@@ -5,14 +5,12 @@ set -euo pipefail
 if command -v pacman >/dev/null 2>&1; then
     echo "Installing required packages..."
 # install yay
-    cd "$HOME"
-    git clone https://aur.archlinux.org/yay.git
-    cd yay
-    makepkg -si
-    cd ..
-    rm -rf yay
-    cd "$HOME/laptop-rice"
-    clear
+    read -p "Install yay? [Y/n]: " answer
+    answer=${answer:-Y}
+    case "$answer" in
+        [Yy]* ) cd "$HOME" && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay && cd "$HOME/laptop-rice" && clear;;
+        [Nn]* ) echo "No"; continue;;
+    esac
     
     sudo pacman -S --needed --noconfirm niri waybar mako fuzzel fastfetch swaylock swayidle swww thunar htop calcurse networkmanager gammastep rust libpipewire pkgconf clang gnu-free-fonts noto-fonts noto-fonts-emoji
     yay -S --needed --noconfirm ttf-noto-sans-mono-vf
