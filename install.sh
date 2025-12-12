@@ -7,7 +7,7 @@ if command -v pacman >/dev/null 2>&1; then
     answer=${answer:-Y}
     case "$answer" in
         [Yy]* ) cd "$HOME" && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay && cd "$HOME/laptop-rice" && clear;;
-        [Nn]* ) echo "No"; continue;;
+        [Nn]* ) clear; continue;;
     esac
 
     echo "Installing required packages..."
