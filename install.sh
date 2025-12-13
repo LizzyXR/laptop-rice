@@ -26,7 +26,7 @@ if command -v pacman >/dev/null 2>&1; then
     yay -S --needed --noconfirm ttf-noto-sans-mono-vf bluetuith
     cargo install wiremix
 
-    sudo systemctl enable --now NetworkManager
+    sudo systemctl enable --now NetworkManager.service
 
     clear
     
