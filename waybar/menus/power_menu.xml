@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<menu id="power-menu">
-    <item label="Suspend" action="systemctl suspend"/>
-    <item label="Hibernate" action="systemctl hibernate"/>
-    <item label="Shutdown" action="systemctl poweroff"/>
-    <separator/>
-    <item label="Reboot" action="systemctl reboot"/>
-</menu>
