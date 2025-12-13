@@ -1,5 +1,4 @@
 #!/bin/bash
-# Power menu using Fuzzel
 CHOICE=$(printf "Suspend\nHibernate\nShutdown\nReboot" | fuzzel --dmenu --prompt "Power:")
 
 case $CHOICE in
