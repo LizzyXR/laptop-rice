@@ -7,19 +7,17 @@ if command -v pacman >/dev/null 2>&1; then
     answer=${answer:-Y}
     
     case "$answer" in
-    [Yy]*)
-    cd "$HOME" || exit 1
-    git clone https://aur.archlinux.org/yay.git
-    cd yay || exit 1
-    makepkg -si
-    cd "$HOME" || exit 1
-    rm -rf yay
-    cd "$HOME/laptop-rice" || exit 1
-    clear;;
+        [Yy]*)
+        cd "$HOME" || exit 1
+        git clone https://aur.archlinux.org/yay.git
+        cd yay || exit 1
+        makepkg -si
+        cd "$HOME" || exit 1
+        rm -rf yay
+        cd "$HOME/laptop-rice" || exit 1
+        clear;;
     
-    [Nn]*)
-        clear;; *)
-        echo "Skipping yay";;
+        [Nn]*) clear;; *)
     esac
 
     echo "Installing required packages..."
