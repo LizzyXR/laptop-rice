@@ -3,6 +3,10 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+config-notification {
+    disable-failed
+}
+
 // Set usefull environment variables
 environment {
     // set data dirs for fuzzel recognize flatpaks
