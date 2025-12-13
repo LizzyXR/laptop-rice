@@ -3,11 +3,23 @@
 set -euo pipefail
 
 if command -v pacman >/dev/null 2>&1; then
-    read -p "Install yay? [Y/n]: " answer
+    read -rp "Install yay? [Y/n]: " answer
     answer=${answer:-Y}
+    
     case "$answer" in
-        [Yy]* ) cd "$HOME" && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay && cd "$HOME/laptop-rice" && clear;;
-        [Nn]* ) clear; continue;;
+    [Yy]*)
+    cd "$HOME" || exit 1
+    git clone https://aur.archlinux.org/yay.git
+    cd yay || exit 1
+    makepkg -si
+    cd "$HOME" || exit 1
+    rm -rf yay
+    cd "$HOME/laptop-rice" || exit 1
+    clear;;
+    
+    [Nn]*)
+        clear;; *)
+        echo "Skipping yay";;
     esac
 
     echo "Installing required packages..."
