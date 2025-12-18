@@ -33,6 +33,7 @@ if command -v pacman >/dev/null 2>&1; then
     echo "Performing magic..."
     mkdir -p "$HOME/.config"
     cp -r niri "$HOME/.config/"
+    cp -r kitty "$HOME/.config"
     cp -r waybar "$HOME/.config/"
     cp -r mako "$HOME/.config/"
     cp -r fuzzel "$HOME/.config/"
