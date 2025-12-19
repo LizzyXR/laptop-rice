@@ -301,13 +301,10 @@ spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 
 // Launch GNOME Polkit
-spawn-at-startup "/usr/libexec/polkit-gnome-authentication-agent-1"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 // Launch Kanshi for automatic output configuration
 //spawn-at-startup "/usr/bin/kanshi"
-
-// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 // Start pipewire
 //spawn-sh-at-startup "dbus-run-session pipewire"
