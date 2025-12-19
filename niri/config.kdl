@@ -18,7 +18,7 @@ environment {
     // set a terminal variable for some waybar scripts
     TERMINAL "kitty"
     // make QT apps follow gtk style
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    //QT_QPA_PLATFORMTHEME "qt6ct"
     // some ibus required variables
     // GTK_IM_MODULE "ibus"
     // QT_IM_MODULE "ibus"
