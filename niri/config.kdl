@@ -27,10 +27,10 @@ environment {
 }
 
 // FIX: broken cursor size and theme
-/*cursor {
-    xcursor-theme "Capitaine Cursors (Gruvbox)"
+cursor {
+    xcursor-theme "Vanilla-DMZ"
     xcursor-size 16
-}*/
+}
 
 // Input device configuration.
 // Find the full list of options on the wiki:
