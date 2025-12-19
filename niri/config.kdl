@@ -7,6 +7,10 @@ config-notification {
     disable-failed
 }
 
+xwayland-satellite {
+    path "xwayland-satellite"
+}
+
 // Set usefull environment variables
 environment {
     // set data dirs for fuzzel recognize flatpaks
