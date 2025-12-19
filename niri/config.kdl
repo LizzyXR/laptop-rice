@@ -305,6 +305,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 
 // Start mako
+spawn-at-startup "notification-daemon"
 spawn-at-startup "mako"
 
 // Launch GNOME Polkit
