@@ -22,7 +22,7 @@ if command -v pacman >/dev/null 2>&1; then
 
     echo "Installing required packages..."
     
-    sudo pacman -S --needed --noconfirm niri waybar mako notification-daemon fuzzel fastfetch swaylock swayidle swww kitty helix thunar htop calcurse networkmanager gammastep geoclue2 rust libpipewire pkgconf clang gnu-free-fonts noto-fonts noto-fonts-emoji xcursor-vanilla-dmz
+    sudo pacman -S --needed --noconfirm niri waybar mako notification-daemon fuzzel fastfetch swaylock swayidle awww-bin kitty helix thunar htop calcurse networkmanager gammastep geoclue2 rust libpipewire pkgconf clang gnu-free-fonts noto-fonts noto-fonts-emoji xcursor-vanilla-dmz
     yay -S --needed --noconfirm ttf-adwaita-mono-nerd bluetuith
     cargo install wiremix
 
